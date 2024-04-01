@@ -1,0 +1,280 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "poppins", sans-serif;
+    margin: 0   ;
+    background-color: #EEEEEE;
+}
+
+h1, h2 {
+    font-family: "jost", sans-serif;
+}
+
+
+/* styling header */
+
+header.navbar-container {
+    width: 100%;
+    padding-block: 1rem;
+    margin-inline: auto;
+
+    background-color: #EEEEEE;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+
+    z-index: 9999;
+
+}
+
+header.navbar-container .logo img {
+    width: 150px;
+}
+
+header.navbar-container .nav-list ul{
+    padding-left: 0;
+   
+    display: flex;
+    justify-content: center;
+
+    gap: 2rem 1rem;
+
+}
+
+header.navbar-container .nav-list li {
+    list-style-type: none;
+}
+
+header.navbar-container .nav-list li a{
+    padding: 0.5rem 1.5rem;
+    
+    text-decoration: none;
+    font-family: "jost", sans-serif;
+    font-size: 1.05rem;
+    color: black;
+
+    transition: all 0.2s ease-in;
+}
+
+header.navbar-container .nav-list li a:hover {
+    background-color: #222831;
+    color: white;
+    border-bottom: 1px solid black;
+  }
+/* Batas Styling header */
+
+/* Styling bagian landing page */
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1rem;
+    gap: 5rem ;
+}
+
+
+main .landing {
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-block: 8rem 4rem;
+    padding-left: 2rem;
+
+    position: static;
+
+}
+
+main .landing-content {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+}
+
+main .landing-text {
+    flex : 1 1;
+}
+
+main .landing-content button {
+    padding: 0.8rem 2.5rem;
+    border: 1px solid #222831;
+    margin-block: 1rem  ;
+
+
+    background-color: transparent;
+
+    font-family: "poppins", sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+main .landing-content button:hover {
+    background-color: #222831;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid white;
+    color: white;
+}
+
+main .landing-content .landing-image{
+   flex: 1;
+   
+   display: flex;
+}
+
+main .landing-content .landing-image img {
+    width: 400px;
+    min-width: 300px;
+    margin: auto;
+}
+/* Batas Styling landing page*/
+
+
+/* styling Bagian 2*/
+
+#porto {
+    flex: 1;
+    display: flex;
+    gap: 1rem;
+}
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+
+    padding: 20px;
+}
+
+/* batas Styling bagian 2 */
+
+
+/* styling aside */
+
+
+aside {
+    flex: 2;
+    text-align: center;
+    width: 300px;
+}
+
+aside .profile img {
+    width: 150px;
+}
+
+aside table {
+    border: none;
+    width: 100%;
+
+}
+aside .social-media {
+    padding-left: 0;
+}
+aside .social-media ul {
+    gap: 1rem   ;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+aside .social-media li {
+    list-style-type: none;
+}
+ 
+aside .social-media li a {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    color: #222831;
+  
+    transition: all 0.1s ease-in-out;
+  }
+  
+aside .social-media li a:hover {
+    color: #89b0d9;
+  }
+
+aside .profile input{
+    padding: 0.5rem;
+    border: #222831 1px solid  ;
+    background-color: transparent;
+    color: black;
+}
+
+aside .profile button {
+    padding: 0.5rem;
+    background-color: transparent;
+    border: #222831 1px solid;
+    color: black;
+}
+
+aside .profile input:hover{
+    background-color: white;
+    color: black;
+}
+
+aside .profile button:hover{
+    background-color: #222831;
+    color: white;
+}
+/* batas styling aside */
+
+/* Styling footer */
+
+footer {
+    background-color: #222831;
+    padding: 20px;
+    color: white;
+    text-align: center;
+
+}
+/* Batas Styling footer */
+
+
+@media screen and (max-width: 1200px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+    header.navbar-container {
+        flex-direction: column;
+    }
+    header.navbar-container .nav-list ul {
+        flex-wrap: wrap;
+        column-gap: 0.5rem;
+      }
+
+    .landing-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .landing-text .title {
+        font-size: 3rem;
+    }
+
+    .landing-text p{
+        font-size: 1rem;
+    }
+
+    .landing-image img {
+        order: -1;
+    }
+    #porto {
+        flex-direction: column;
+    }
+    aside {
+        width: 100%;
+    }
+}

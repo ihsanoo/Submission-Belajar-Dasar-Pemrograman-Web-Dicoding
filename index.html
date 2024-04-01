@@ -1,12 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Submission Web Dasar</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submission dicoding</title>
     <link rel="stylesheet" href="./css/app.css">
+
+  <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 5.15.4 -->
+    <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+          integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer">
+
 </head>
 <body>
-    
+  <header class="navbar-container">
+    <div class="logo">
+      <img src="./assets/image/logo.png" alt="ingenia consultan">
+    </div>
+    <nav class="nav-list">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#porto">Project</a></li>
+        <li><a href="#Kontak">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Batas Header -->
+
+  <main>
+
+    <!-- bagian pertama -->
+    <div class="landing">
+      <div class="landing-content">
+        <div class="landing-text">
+          <h1 class="title">INGENIA</h1>
+          <p>
+            Ingenia bukan sekadar firma arsitektur biasa. Kami adalah kumpulan individu yang memiliki
+            obsesi terhadap detail, kecintaan pada desain yang inovatif, dan komitmen untuk memberikan
+            solusi yang sesuai dengan kebutuhan unik setiap klien. Dengan pengalaman yang luas dan
+            kreativitas yang tak terbatas, kami siap mewujudkan visi Anda menjadi kenyataan.
+          </p>
+          <button>Lebih lanjut</button>
+        </div>
+        <div class="landing-image">
+          <img src="./assets/image/logo.png" class="featured-image" alt="Ingenia consultan">
+        </div>
+      </div>
+    </div>
+    <!-- batas bagian pertama -->
+
+    <!-- Bagian Kedua -->
+    <div id="porto">
+       <div id="content">
+        <article id="villa" class="card">
+          <h2>Villa Modern</h2>
+          <img src="./assets/image/villa.jpg" class="featured-image" alt="villa pinggir pantai" class="featured-image">
+          <p>
+            Proyek ini melibatkan desain villa mewah di tepi pantai dengan pemandangan laut yang 
+            menakjubkan. Menggabungkan elemen-elemen arsitektur modern dengan sentuhan alam, villa ini
+            menjadi tempat yang sempurna untuk bersantai dan menikmati keindahan alam.
+          </p>
+        </article>
+        <article id="kantor" class="card">
+          <h2>Kantor Ruang Terbuka</h2>
+          <img src="./assets/image/office.jpg" class="featured-image" alt="Kantor ruang terbuka">
+          <p>
+            Kami merancang kantor ruang terbuka yang inovatif untuk perusahaan teknologi 
+            terkemuka. Dengan fokus pada fleksibilitas dan kreativitas, ruang ini memungkinkan karyawan 
+            untuk berkolaborasi dengan mudah sambil tetap mempertahankan privasi dan kenyamanan.
+          </p>
+        </article>
+
+        <article id="renovasi" class="card">
+          <h2>Renovasi Rumah Tua Menjadi Hunian Modern</h2>
+          <img src="./assets/image/renovasi.jpg" class="featured-image" alt="Renovasi Rumah">
+          <p>
+            Proyek renovasi ini mengubah rumah tua yang sudah tua menjadi hunian modern yang 
+            fungsional dan indah. Dengan mempertahankan sebagian besar struktur asli dan menambahkan 
+            sentuhan kontemporer, rumah ini kini menjadi tempat tinggal impian bagi keluarga kami.
+          </p>
+        </article>
+      </div>
+    <!-- Batas bagian kedua -->
+
+    <!-- konten samping -->
+    <aside id="Kontak">
+      <article class="profile card">
+        <header>
+          <h2>Ingenia</h2>
+          <p>Architecture and Design</p>
+          <figure>
+            <img src="./assets/image/logo.png">
+          </figure>
+        </header>
+        <section>
+          <div class="social-media">
+            <table>
+              <tr>
+                <th>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        </ul>
+                </th>
+            </tr>
+            <tr>
+              <td>
+                <p>Informasi Lainnya</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="email" placeholder="Enter email to recive updates and newsletter" name="email" id="email">
+                <button type="submit">Subscribe</button>
+              </td>
+            </tr>
+          </table>
+          </div>
+        </section>
+      </article>
+    </aside>
+  </div>
+  </main>
+
+  <footer>
+   <p>&#169; 2024, Ingenia</p>
+  </footer>
 </body>
 </html>
+
+
+
